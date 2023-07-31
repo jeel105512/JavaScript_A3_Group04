@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Todo</title>
+  </head>
+  <body>
+    <header>
+      <h1>Todo App</h1>
+    </header>
+    <main>
+      <div class="todo-container">
+        <div class="title">
+          <div class="title-form">
+            <form action="">
+                <div class="form-task">
+                  <label for="task">Task:</label>
+                  <input type="text" id="addTitleInput" />
+                </div>
+                <div class="form-description">
+                  <label for="description">Description:</label>
+                  <input type="text" id="addDescriptionInput" />
+                </div>
+              </form>
+          </div>
+          <div class="title-button">
+            <button class="add-button" id="addButton">Add</button>
+          </div>
+        </div>
+        <div class="tasks" id="tasksContainer">
+          <!--  -->
+        </div>
+      </div>
+
+      <!-- model -->
+      <div class="model model-display" id="editForm">
+        <h2>Edit</h2>
+        <input type="text" placeholder="Title" id="editTitleInput" />
+        <input type="text" placeholder="Description" id="editDescriptionInput"
+        />
+        <button id="update">Update</button>
+      </div>
+    </main>
+    <footer>&copy;2023 Jeelkumar Patel</footer>
+    
+    <script src="./js/main.js"></script>
+  </body>
+</html>
